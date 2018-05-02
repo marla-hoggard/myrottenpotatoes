@@ -64,10 +64,18 @@ table#movies th, table#movies td {
   padding: 4px;
   text-align: left;
 }
-#notice, #warning {
-  background: rosybrown;
+.message {
   margin: 1em 0;
   padding: 4px;
+  text-align: center;
+}
+
+#notice {
+  background: #F1DFB8;
+}
+
+#warning {
+  background: rosybrown;
 }
 form label {
   display: block;
