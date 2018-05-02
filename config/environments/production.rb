@@ -76,4 +76,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  #MANUAL - FOR HEROKU -> DO WE STILL NEED THIS IN THIS VERSION??
+  config.assets.initialize_on_precompile = false
 end
