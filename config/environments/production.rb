@@ -78,5 +78,5 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   #MANUAL - FOR HEROKU -> DO WE STILL NEED THIS IN THIS VERSION??
-  # config.assets.initialize_on_precompile = false
+  config.assets.initialize_on_precompile = false
 end
