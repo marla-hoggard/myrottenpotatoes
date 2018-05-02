@@ -46,7 +46,8 @@ group :development do
 end
 
 group :production do
-  gem 'pg' #use postgresql on heroku
+  gem 'pg' # use postgresql on heroku
+  gem 'rails_12factor' # for heroku
 end
 
 # MANUAL ADDITIONS
