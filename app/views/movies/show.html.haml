@@ -10,6 +10,7 @@
 
 %h3 Description:
 %p#description= @movie.description
-= link_to 'Edit info', edit_movie_path
-= link_to "Delete", movie_path(@movie), :method => :delete, :data => {confirm: "Are you sure you want to delete '#{@movie.title}'?"}
-= link_to 'Back to movie list', movies_path
+.movielinks
+	.showlink= link_to 'Edit info', edit_movie_path
+	.showlink= link_to "Delete", movie_path(@movie), :method => :delete, :data => {confirm: "Are you sure you want to delete '#{@movie.title}'?"}
+	.showlink= link_to 'Back to movie list', movies_path

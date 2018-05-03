@@ -49,6 +49,20 @@ h1.title {
   font-size: 2em;
   font-style: normal;
 }
+
+#title-banner {
+  background: wheat;
+  padding: 5px 20px;
+  margin-top: 0;
+  border: none;
+}
+
+#title-banner a {
+  color: maroon;
+  text-decoration: none;
+  font-size: 2.5em;
+}
+
 table#movies {
   margin: 10px;
   border-collapse: collapse;
@@ -64,22 +78,62 @@ table#movies th, table#movies td {
   padding: 4px;
   text-align: left;
 }
-.message {
-  margin: 1em 0;
-  padding: 4px;
-  text-align: center;
+
+.movies-row:hover {
+  background: #e8ddc7;
 }
 
-#notice {
-  background: #F1DFB8;
+.message {
+  margin: 1em 1em;
+  padding: 4px;
+  font-style: italic;
+  color: maroon;
 }
 
 #warning {
   background: rosybrown;
+  color: white;
 }
+
 form label {
   display: block;
   line-height: 25px;
   font-weight: bold;
   color: maroon;
+}
+
+#description {
+  padding-left: 2em;
+  padding-bottom: 5px;
+  max-width: 350px;
+}
+.movielinks {
+  display: flex;
+  margin-top: 10px;
+}
+.showlink {
+  background: wheat;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 10px;
+}
+
+.showlink a {
+  color: maroon;
+  text-decoration: none 
+}
+
+.showlink input {
+  color: maroon;
+  font-weight: bold;
+  border: none;
+  font-size: 10pt;
+  background: transparent;
+  font-family: Tahoma, Verdana, sans-serif;
+  padding: 0;
+}
+
+.showlink a:hover, .showlink input:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
